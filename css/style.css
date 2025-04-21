@@ -386,6 +386,29 @@ span
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5sec ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem; /* Set a fixed minimum height for all boxes */
+}
+
+.readmore-box {
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.readmore-box:hover {
+    background-color: darken(var(--main-color), 10%);
 }
 
 .services-container .services-box:hover
@@ -414,6 +437,7 @@ span
 {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+    text-align: justify;
 }
 
 .portfolio
